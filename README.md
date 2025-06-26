@@ -12,10 +12,10 @@ This repository is full of little oddball projects we've made over the years tha
 <table style="width:100%;">
 <tr>
 	<td>
-- _Dog Vision_: A script which loads images from a source directory and converts them to an image scaling which is designed to emulate to visual color sensitivities of canine eyes. It is based research into the spectral sensitivity of canine cone receptors and color image mapping transforms for spectral shifting on different monitors (mainly weighted geometric averaging and the gamma transform). It _doesn't_ just remove red and scale down green- it re-maps the color spectrum to account for cross-spectrum dichromism.
+- <i>Dog Vision</i>: A script which loads images from a source directory and converts them to an image scaling which is designed to emulate to visual color sensitivities of canine eyes. It is based research into the spectral sensitivity of canine cone receptors and color image mapping transforms for spectral shifting on different monitors (mainly weighted geometric averaging and the gamma transform). It _doesn't_ just remove red and scale down green- it re-maps the color spectrum to account for cross-spectrum dichromism.
 	</td>
 	<td>
-![Screenshot from 2023-06-05 10-43-06](https://github.com/user-attachments/assets/df7f4300-c2b5-44e1-9b32-8f6571e36d33)
+	<img src="https://github.com/user-attachments/assets/5a143636-69ac-41f8-bf59-129643425a7b" style="width:100px">
 	</td>
 </tr>
 </table>
