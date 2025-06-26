@@ -5,4 +5,4 @@ This repository is full of little oddball projects we've made over the years tha
 **Contents:**
 - _Number Word &lt;cough&gt;_: Containing two useable functions, this script builds up a list of words that can be made with number/letter exchanges (like EGOIST/360157). Mainly used to work playful jokes into embedded numbers, like costs, bills, things like that.
 
-- _Morse Trial_: A suite of functions which interpret morse code, with the assumption that you get the dots and dashes raw, without spacing or delimiters. It does so by using a dynamic partition divide and conquor algorithm to check paired subsequences and throw out any which have either side invalid at any point detected. 
+- _Morse Trial_: A suite of functions which interpret morse code, with the assumption that you get the dots and dashes raw, without spacing or delimiters. It does so by using a dynamic partition divide and conquor algorithm to check paired subsequences and throw out any which have either side invalid at any point detected. Fun fact, 
