@@ -9,13 +9,17 @@ This repository is full of little oddball projects we've made over the years tha
 
 - _Math Game_: A small game file written in processing that prompts the player to solve simple arithmetic problems with a point feedback system proportional to the time taken to answer the questions. A project meant to experiment with and build processing interface utilities, it implements multiple asynchronous timers, toggle and momentary buttons, a state machine, and an assortment of graphics modes. Mainly a toy project to get all those things working together.
 
-<table style="width:100%;">
+<table style="width:100%;" cellspacing="0" cellpadding="0">
 <tr>
 	<td>
-- <i>Dog Vision</i>: A script which loads images from a source directory and converts them to an image scaling which is designed to emulate to visual color sensitivities of canine eyes. It is based research into the spectral sensitivity of canine cone receptors and color image mapping transforms for spectral shifting on different monitors (mainly weighted geometric averaging and the gamma transform). It _doesn't_ just remove red and scale down green- it re-maps the color spectrum to account for cross-spectrum dichromism.
+		<ul>
+			<li>
+<i>Dog Vision</i>: A script which loads images from a source directory and converts them to an image scaling which is designed to emulate to visual color sensitivities of canine eyes. It is based research into the spectral sensitivity of canine cone receptors and color image mapping transforms for spectral shifting on different monitors (mainly weighted geometric averaging and the gamma transform). It _doesn't_ just remove red and scale down green- it re-maps the color spectrum to account for cross-spectrum dichromism.
+			</li>
+	</ul>
 	</td>
 	<td>
-	<img src="https://github.com/user-attachments/assets/5a143636-69ac-41f8-bf59-129643425a7b" style="width:100px">
+	<img src="https://github.com/user-attachments/assets/ab82d679-3340-4059-8821-bb61059276f8" style="width:100px">
 	</td>
 </tr>
 </table>
