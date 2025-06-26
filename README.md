@@ -9,4 +9,15 @@ This repository is full of little oddball projects we've made over the years tha
 
 - _Math Game_: A small game file written in processing that prompts the player to solve simple arithmetic problems with a point feedback system proportional to the time taken to answer the questions. A project meant to experiment with and build processing interface utilities, it implements multiple asynchronous timers, toggle and momentary buttons, a state machine, and an assortment of graphics modes. Mainly a toy project to get all those things working together.
 
+<table style="width:100%;">
+<tr>
+	<td>
 - _Dog Vision_: A script which loads images from a source directory and converts them to an image scaling which is designed to emulate to visual color sensitivities of canine eyes. It is based research into the spectral sensitivity of canine cone receptors and color image mapping transforms for spectral shifting on different monitors (mainly weighted geometric averaging and the gamma transform). It _doesn't_ just remove red and scale down green- it re-maps the color spectrum to account for cross-spectrum dichromism.
+	</td>
+	<td>
+![Screenshot from 2023-06-05 10-43-06](https://github.com/user-attachments/assets/df7f4300-c2b5-44e1-9b32-8f6571e36d33)
+	</td>
+</tr>
+</table>
+
+
