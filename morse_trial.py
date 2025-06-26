@@ -9,7 +9,7 @@
 ####
 
 #Standard
-import math.time.random
+import math,time,random
 
 #Enchant for looking for words
 import enchant
