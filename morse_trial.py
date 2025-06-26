@@ -319,6 +319,7 @@ if __name__ == '__main__':
         op_str = op_str + soln[0] + "\n" #Append to the string
 
         #Add each full decomposition into the string
+        #   'interp' are interpretations- segments of text broken up into valid english words.
         for interp in soln[1]:
             op_str = op_str + "  " + interp + "\n"
             print("  ",interp)
