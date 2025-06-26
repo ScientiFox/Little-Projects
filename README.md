@@ -4,39 +4,13 @@ This repository is full of little oddball projects we've made over the years tha
 
 **Contents:**
 
-<table>
-<tr><td>
-	<ul><li>
-<i>Number Word &lt;cough&gt;</i>: Containing two useable functions, this script builds up a list of words that can be made with number/letter exchanges (like EGOIST/360157). Mainly used to work playful jokes into embedded numbers, like costs, bills, things like that.
-	</li></ul>
-</td></tr>
+- <i>Number Word &lt;cough&gt;</i>: Containing two useable functions, this script builds up a list of words that can be made with number/letter exchanges (like EGOIST/360157). Mainly used to work playful jokes into embedded numbers, like costs, bills, things like that.
 
-</tr><td>
-	<ul><li>
-<i>Morse Trial</i>: A suite of functions which interpret morse code, with the assumption that you get the dots and dashes raw, without spacing or delimiters. It does so by using a dynamic partition divide and conquor algorithm to check paired subsequences and throw out any which have either side invalid at any point detected. Fun fact, even simple messages often have thousands of possible solutions, even when allowing only translated strings which are comprised of valid english words only!
-	</li></ul>
-<td></tr>
+- <i>Morse Trial</i>: A suite of functions which interpret morse code, with the assumption that you get the dots and dashes raw, without spacing or delimiters. It does so by using a dynamic partition divide and conquor algorithm to check paired subsequences and throw out any which have either side invalid at any point detected. Fun fact, even simple messages often have thousands of possible solutions, even when allowing only translated strings which are comprised of valid english words only!
 
-</tr><td>
-	<ul><li>
-<i>Math Game</i>: A small game file written in processing that prompts the player to solve simple arithmetic problems with a point feedback system proportional to the time taken to answer the questions. A project meant to experiment with and build processing interface utilities, it implements multiple asynchronous timers, toggle and momentary buttons, a state machine, and an assortment of graphics modes. Mainly a toy project to get all those things working together.
-	</li></ul>
-</td></tr>
+- <i>Math Game</i>: A small game file written in processing that prompts the player to solve simple arithmetic problems with a point feedback system proportional to the time taken to answer the questions. A project meant to experiment with and build processing interface utilities, it implements multiple asynchronous timers, toggle and momentary buttons, a state machine, and an assortment of graphics modes. Mainly a toy project to get all those things working together.
 
-<tr>
-	<td>
-		<ul>
-			<li>
-<i>Dog Vision</i>: A script which loads images from a source directory and converts them to an image scaling which is designed to emulate to visual color sensitivities of canine eyes. It is based research into the spectral sensitivity of canine cone receptors and color image mapping transforms for spectral shifting on different monitors (mainly weighted geometric averaging and the gamma transform). It _doesn't_ just remove red and scale down green- it re-maps the color spectrum to account for cross-spectrum dichromism.
-			</li>
-	</ul>
-	</td>
-	<td>
-	<img src="https://raw.githubusercontent.com/ScientiFox/Little-Projects/refs/heads/main/Dog%20Vision/Dog%20VIsion%20Math.png" width="300">
-	<br/>
-	<div width="200">(Spectrum transforms for output channels)</div>
-	</td>
-</tr>
-</table>
+- <i>Dog Vision</i>: A script which loads images from a source directory and converts them to an image scaling which is designed to emulate to visual color sensitivities of canine eyes. It is based research into the spectral sensitivity of canine cone receptors and color image mapping transforms for spectral shifting on different monitors (mainly weighted geometric averaging and the gamma transform). It _doesn't_ just remove red and scale down green- it re-maps the color spectrum to account for cross-spectrum dichromism.
+
 
 
