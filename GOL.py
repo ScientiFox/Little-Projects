@@ -17,22 +17,22 @@ import cv2
 #Wrapper to shift an array up one cell
 def shift_up(array):
     size = np.shape(array)
-    return np.row_stack((array[1:,:],np.zeros((1,size[1]))))
+    return np.vstack((array[1:,:],np.zeros((1,size[1]))))
 
 #Wrapper to shift an array down one cell
 def shift_down(array):
     size = np.shape(array)
-    return np.row_stack((np.zeros((1,size[1])),array[:-1,:]))
+    return np.vstack((np.zeros((1,size[1])),array[:-1,:]))
 
 #Wrapper to shift an array left one cell
 def shift_left(array):
     size = np.shape(array)
-    return np.column_stack((array[:,1:],np.zeros((size[0],1))))
+    return np.hstack((array[:,1:],np.zeros((size[0],1))))
 
 #Wrapper to shift an array, yup, right one cell
 def shift_right(array):
     size = np.shape(array)
-    return np.column_stack((np.zeros((size[0],1)),array[:,:-1]))
+    return np.hstack((np.zeros((size[0],1)),array[:,:-1]))
 
 #Function to label a cell by its neighbors
 def label_neighbours(array):
