@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*Main columns, 1080 looks nice with the elements as-is*/
+.columns {
+	max-width:1080px;
+	width: 100%;
+	padding: 20px 0 0 10px;
+}
+
+/*Columns both aligned to top, padding to separate them a little*/
+.columnLeft {
+	width: 50%;
+	vertical-align: top;
+}
+.columnRight {
+	width: 50%;
+	vertical-align: top;
+	padding: 0 0 0 20px;
+	border-style: inset;
+}
+</style>
+</head>
+
+<body>
+
+<h3>JS Scratchpad</h3>
+
+A scratchpad to execute code direcly.
+
+Define global variables in the <b>Globals</b> textbox. Code in <b>Setup</b> is run once, and <b>Loop</b> runs continuously with a period set by the <i>Loop Period</i> value. <b>Globals</b> are parsed to 'this.*' entries, and along with <b>Setup</b> are run with
+<span style="color:darkViolet">eval()</span>. <b>Loop</b> is made into a <span style="color:darkViolet">Function()</span> and started with a <span style="color:darkViolet">setInterval</span>. The 'Run' button executes the globals constructor, runs the setup, and then sets the loop to run periodically. 'Kill' ends the loop and resets the interval object. <br/><br/>
+
+Variables made available to the script are below in <span style="color:blue">blue</span>:
+<ul>
+<li><span style="color:blue">clock</span> a global clock timer</li>
+<li><span style="color:blue">opStr</span> for a single-line display of internal variables</li>
+<li><span style="color:blue">exitCond</span> flag to internally kill the loop and reset</li>
+<li><span style="color:blue">resultsText</span>, which pops output into a div on the right column</li>
+</ul>
+
+Methods are in <span style="color:red">red</span>:
+<ul>
+<li><span style="color:red">setRes</span> to set the innerHTML contents of the results box</li>
+<li><span style="color:red">getRes</span> to fetch them.</li>
+</ul>
+<br/>
+
+<span style="color:red;"><b>WARNING: extremely insecure! Only for utility work!</b></span><br/>
+
+<span style="color:blue;">clock</span> <span id="clock"></span>
+<br/>
+
+<table class="columns" id='mainContent'>
+<tr>
+	<td class="columnLeft">
+
+	<div style="width:max-content;border:1px solid;">	
+
+		<div>
+		Display Var: <span style="color:blue;align:center;">opStr</span> Loop Var: <span style="color:blue;align:center;">exitCond</span>
+		<button id="runButton" onclick="runCode();" style="float:right;width:50px;">Run</button>
+		</div>
+
+		<div style="margin-top:5px;">
+		Op Div: <span style="color:blue;align:center;">resultsText <span style="color:red;">| setRes & getRes</span></span>
+		<button id="killButton" onclick="killCode();" style="float:right;width:50px;">Kill</button>
+		</div>
+
+		<b>Globals</b>
+		<br/>
+		<div style="margin-top:5px;text-align:center;">
+		<input type='text' id='globalVars' style="width:95%;" value = 'i,j,timer,counter'>
+		</div>
+
+		<b>Setup</b><br/>
+		<textarea id="setupArea" rows="10" cols="70"></textarea><br/>
+		<b>Loop</b> <span style="float:right;">Loop Period:<input id="loopPeriod" type="number" value=10 min=1 style="width:5em;"></span>
+		<br/>
+		<textarea id="loopArea" rows="40" cols="70"></textarea>
+	</div>
+
+	</td>
+	<td class="columnRight">
+	<div>
+		<span style="color:darkGreen;"><b>Output</n></span>
+		<hr width=98% style="align:center;">
+		<span>Display Variable:</span>
+		<span id="outputText"></span>
+		<hr width=98% style="align:center;">
+		<span>Results:</span> <br/>
+		<div id="resultsText"></div>
+		
+	</div>
+	</td>
+</tr>
+</table>
+
+<script src='scratchpad.js'></script>
+
+</body>
+</html>
