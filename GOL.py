@@ -126,11 +126,16 @@ if __name__ == '__main__':
     init = np.random.random(size=(size,size))
     init = 1*(init>0.5)
 
+    average = np.zeros((size,size))
+
     #Put the array in the sim
     G.populate(init)
 
     #previous step monitor
     step_p = init
+    diff_p = init
+    dMax_a = 1.0
+    l = 0.95
 
     running = True #Run flag
     while (running): #Loop until killed
@@ -138,8 +143,16 @@ if __name__ == '__main__':
         #Do an update step
         step = G.iterate()
 
+        average = l*average + (1.0-l)*step
+        diff = np.abs(step-average)
+
+        op = np.zeros((size,size,3))
+        op[:,:,0] = step
+        op[:,:,1] = step
+        op[:,:,2] = diff
+
         #Show the step in-window
-        cv2.imshow("GoL",step)
+        cv2.imshow("GoL",cv2.resize(op,(800,800)))
 
         #Watch for key press
         key = cv2.waitKey(10) #100Hz update rate
@@ -147,7 +160,15 @@ if __name__ == '__main__':
             running = False #set to stop running
 
         #Watch for static world
-        if (step==step_p).all():
+        diff_sum = np.sum(np.abs(diff-diff_p))
+        diff_p = diff
+        dMax = np.max(diff)
+        dMax_a = l*dMax_a + (1.0-l)*dMax
+
+
+        print(diff_sum,dMax_a)
+
+        if (step==step_p).all() or dMax_a < l**2:
             print("Dead World") #Note it's static and end
             running = False
 
