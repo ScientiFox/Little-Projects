@@ -23,3 +23,5 @@ This repository is full of little oddball projects we've made over the years tha
 - _Meep_: Brains for a compact and portable miniature mobile robot which was designed tobe a testing platform for behavior-based robotics algorithms. It was equipped with IR sistance sensors- two downward for line following, one on the side for wall-following one in front for package detection, a Sharp distance sensor for obstacle detection, and a servo for lowering a cage. Previously, it implemented line following, wall following, obstacle avoidance on and off a line, and object capture and manipulation. Sadly at current time only the basic motor controls and line-following routines are extant.
 
 - _Quick Monty Hall_: A quick sim of the monty hall problem slammed out to prove to a friend that switching is better!
+
+- _The OFFICIAL* Rod Huggins Endearment Generator_: Generate endearments in the style of everyone's favorite Juilliard-educated adult film star! (see: https://achewood.com/2008/08/25/title.html)
