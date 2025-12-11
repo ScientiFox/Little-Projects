@@ -25,3 +25,5 @@ This repository is full of little oddball projects we've made over the years tha
 - _Quick Monty Hall_: A quick sim of the monty hall problem slammed out to prove to a friend that switching is better!
 
 - _The OFFICIAL* Rod Huggins Endearment Generator_: Generate endearments in the style of everyone's favorite Juilliard-educated adult film star! (see: https://achewood.com/2008/08/25/title.html)
+
+- _make_gif_: Converts a set of images into a directory into a gif. Uses REGEX to sort in order by digits in filenames and make a name based on the root of an initial file, basically used ROOT+ligature+digit, assuming a set of outputs in order from another program, basically. Also works on not that, but keep in mind the sorting mechanism.
