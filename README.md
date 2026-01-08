@@ -29,3 +29,5 @@ This repository is full of little oddball projects we've made over the years tha
 - _make_gif_: Converts a set of images into a directory into a gif. Uses REGEX to sort in order by digits in filenames and make a name based on the root of an initial file, basically used ROOT+ligature+digit, assuming a set of outputs in order from another program, basically. Also works on not that, but keep in mind the sorting mechanism.
 
 - _Librarian2_: Back in '13/'14 I was a member of the LVL1 makerspace in Louisville KY. I made this little script as a contribution to their automated book checkout for the small library they maintained. From a webcam feed, it reads barcodes from books in view, then does an ISBN lookup to grab their title. The ISBN and title were used by another component for checkout tracking in a database
+
+- _Chimerical Colors_: A test script to display the retinal fatigue patterns that let you briefly see imaginary colors due to sensory depletion phenomena. It's really fascinating to me to be able to get a brief glimpse into the other world! Includes a gif-ified version, too
