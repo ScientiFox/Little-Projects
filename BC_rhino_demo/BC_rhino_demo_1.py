@@ -1,7 +1,6 @@
 import math,time,random
 from playsound import playsound
-import pyvolume
-
+import os
 #Fetch Libs
 import finnhub as FH
 
@@ -51,12 +50,11 @@ while (True):
     elif PLAYING == 2:
         if time.time()-tme < UP_RAMP:
             VOLUME = int(100*(time.time()-tme)/UP_RAMP)
-            pyvolume.custom(percent=VOLUME)
-            #print("A",VOLUME)
+            os.system("amixer sset Master "+str(VOLUME))
+
         if (time.time()-tme > DURATION-DOWN_RAMP):
             VOLUME = int(50+50*(DURATION-(time.time()-tme))/DOWN_RAMP)
-            pyvolume.custom(percent=VOLUME)
-            #print("B",VOLUME)
+            os.system("amixer sset Master "+str(VOLUME))
 
         if time.time()-tme < DURATION:
             print(VOLUME,round(time.time()-tme,2))
